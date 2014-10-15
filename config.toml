@@ -2,5 +2,3 @@ ListenHost = "0.0.0.0"
 ListenPort = 8080
 RAHost = "127.0.0.1"
 RAPort = 55355
-Username = "admin"
-Password = "admin"

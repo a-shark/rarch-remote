@@ -14,8 +14,6 @@ type Config struct {
   ListenPort int
   RAHost string
   RAPort int
-  Username string
-  Password string
 }
 
 func main() {
