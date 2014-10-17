@@ -19,8 +19,11 @@ type Config struct {
 func main() {
   c := getConfig()
   r := mux.NewRouter()
-  r.HandleFunc("/", Index).Methods("GET")
+  
+  fs := http.FileServer(http.Dir("static/"))
+
   r.HandleFunc("/command", Command).Methods("POST")
+  r.PathPrefix("/").Handler(http.StripPrefix("/", fs))
   http.Handle("/", r)
   fmt.Println("Listening on " + c.ListenHost + ":" + strconv.Itoa(c.ListenPort))
   http.ListenAndServe(c.ListenHost + ":" + strconv.Itoa(c.ListenPort), nil)

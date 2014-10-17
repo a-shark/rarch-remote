@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Retroarch Remote</title>
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.theme.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-4">
+      <h1>Retroarch Remote</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <ul id="topnav" class="nav nav-tabs col-xs-4 col-xs-offset-4"
+    role="tablist">
+      <li class="active">
+        <a href="#menu" role="tab" data-toggle="tab">Menu</a>
+      </li>
+
+      <li>
+        <a href="#game" role="tab" data-toggle="tab">Game</a>
+      </li>
+
+      <li>
+        <a href="#program" role="tab" data-toggle="tab">Program</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="tab-content col-xs-4 col-xs-offset-4">
+      <div class="tab-pane active" id="menu">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Menu Navigation</legend>
+
+            <div class="form-group">
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton"
+                class="btn btn-primary btn-block">Up</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton"
+                class="btn btn-primary btn-block">Down</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton"
+                class="btn btn-success btn-block">Forward</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton"
+                class="btn btn-warning btn-block">Back</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="tab-pane" id="game">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Game Controls</legend>
+
+            <div class="form-group">
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton"
+                class="btn btn-primary btn-block">Quicksave</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton"
+                class="btn btn-primary btn-block">Quickload</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton"
+                class="btn btn-success btn-block">Toggle
+                menu</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="tab-pane" id="program">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Program controls</legend>
+
+            <div class="form-group">
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton"
+                class="btn btn-warning btn-block">Close
+                RetroArch</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton"
+                class="btn btn-success btn-block">Start
+                RetroArch</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
